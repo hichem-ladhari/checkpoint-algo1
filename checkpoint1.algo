@@ -1,0 +1,36 @@
+ALGORITHM algorithm_sentence
+VAR
+   str : STRING
+   L_sentence:INTEGER:=0;
+   N_words:INTEGER:=0;
+   N_vowels:INTEGER:=0;
+   i:INTEGER:=0;  
+   vowels:=["a", "e", "i", "o", "u", "y"]; 
+BEGIN
+     // write anad read a sentence
+     write ("write your sentence") ;
+     Read(str);
+     IF (str[str.length-2] " ") THEN
+        N.Word+=1;
+        End_If
+     While (str[i] <> ".")
+      DO 
+      //sauter les espaces et detecter si il y'a un mot
+      IF(str[i] " ") THEN 
+            L.words+=1;
+      END_IF
+      IF(str[i].includes(vowels)) THEN 
+            N.Vowels += 1;
+            L_sentence += 1
+            else L_sentence += 1
+      End_If
+        
+   end_while    
+
+
+
+    read(L.Sentence);
+    read(N.Word);
+    read(N.Vowels);
+
+END
